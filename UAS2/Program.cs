@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace Aplikasi_kasir //membuat namespace untuk menamakan program
 {
+    /// <summary>
+    /// main class
+    /// </summary>
     class Program  //membuat class program untuk memasukkan fungsi dan variabel
     {
+        /// <summary>
+        /// operasi untuk menjalankan aplikasi
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args) //Suatu method void adalah suatu method yang hanya menjalankan sekumpulan perintah dan tidak menghasilkan suatu nilai (Tetapi masih dapat menampilkan sesuatu ke layar).
         {
             Console.WriteLine("\t\t=============================================================================\n");//menampilan teks dalam suatu baris
