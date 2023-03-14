@@ -80,21 +80,21 @@ namespace Aplikasi_kasir //membuat namespace untuk menamakan program
             Console.Write("nama pembeli : ");
             namap = Console.ReadLine();
 
-            tanggal = DateTime.Now.ToString("dd/MM/yyy");
+            tanggal = DateTime.Now.ToString("dd/MM/yyy");//membuat data tanggal
 
-            jam = DateTime.Now.ToString("hh:mm:ss");
+            jam = DateTime.Now.ToString("hh:mm:ss");//membuat data waktu
 
             //memunculkan data nama kasir, nama pelanggan, tanggal dan jam
             Console.Write("tanggal transaksi : " + tanggal);
             Console.Write("\njam transakasi : " + jam);
             Console.WriteLine("\n\nbarang yang dibeli");
             Console.WriteLine("==========================================================");
-            for (int i = 0; i < jumlah; i++)
+            for (int i = 0; i < jumlah; i++)//method untuk memanggil data nama dan harga
             {
                 Console.WriteLine((i + 1) + ". " + nama[i] + "     " + harga[i]);
             }
 
-            foreach (int i in harga)
+            foreach (int i in harga) //method untuk menghitung harga
             {
                 total += i;
             }
@@ -110,7 +110,7 @@ namespace Aplikasi_kasir //membuat namespace untuk menamakan program
                 kembali = bayar - total;
 
                 //kondisi apabila uang yang dibayarkan kurang
-                if (bayar < total)
+                if (bayar < total) //membuat method untuk uang yang dibayarkan kurang
                 {
                     Console.WriteLine("maaf, uang anda kurang !!");
                     Console.WriteLine("-------------------------");
@@ -122,7 +122,7 @@ namespace Aplikasi_kasir //membuat namespace untuk menamakan program
                 }
             }
             while (bayar < total);
-            //mencetak nota dengan streamwritter
+            //mencetak nota dengan streamwritter dan lang
             using (StreamWriter sw = new StreamWriter(@"D:\Kuliah\Nota.txt"))
             {
                 sw.WriteLine("+==================================================+");
