@@ -54,7 +54,7 @@ namespace Aplikasi_kasir //membuat namespace untuk menamakan program
                 {
                     //menampilkan input Nama barang
                     Console.WriteLine("\nmasukan nama barang ke-" + (i + 1));
-                    nama[i] = Console.ReadLine();
+                    nama[i] = Console.ReadLine(); //untuk membaca teks yang kita ketik dalam satu baris (teks).
                 }
                 //user harus menginput nama barang diatas 0 karakter sampai dengan 20 karakter
                 while (nama[i].Length <= 0 || nama[i].Length >= 20);
